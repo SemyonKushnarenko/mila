@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(163, 235, 199);
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1.0);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.0);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1.0);
+  }
+}
+
+body {
+  background-image: url(https://images.wallpaperscraft.ru/image/single/serdechki_ogni_svechenie_147987_1920x1080.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(255, 129, 234);
+}
+
+.container{
+  width: 1024px;
+  margin: 15px auto;
+}
+
+.love-header {
+  font-size: 32px;
+}
+
+.love-list {
+  width: 640px;
+  margin: 15px auto;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.love-item {
+  margin: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.love-item:first-child {
+  font-weight: 700;
+}
+
+.love-heart {
+  width: 20px;
+  aspect-ratio: 1;
+  background-image: url(assets/heart.png);
+  background-size: contain;
+  animation-name: heartbeat;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-duration: 1.5s;
+}
+
+.love-percentage {
+  margin-left: auto;
+}
+
+.love-heart:first-child {
+  display: none;
+}
+
+.love-name {
+  width: 200px;
+  display: inline-block;
+}
+
+.love-note {
+  font-size: 16px;
+  font-style: italic;
+}
